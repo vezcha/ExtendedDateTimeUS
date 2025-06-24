@@ -1,0 +1,28 @@
+{
+  "name": "extendeddatetime",
+  "version": "0.0.9",
+  "description": "extended date time helper functions and values for timezones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vezcha",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vezcha/ExtendedDateTimeUS.git"
+  },
+  "keywords": [
+    "js",
+    "date",
+    "extension",
+    "timezone"
+  ],
+  "bugs": {
+    "url": "https://github.com/vezcha/ExtendedDateTimeUS/issues"
+  },
+  "homepage": "https://github.com/vezcha/ExtendedDateTimeUS#readme"
+}
