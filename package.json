@@ -1,6 +1,6 @@
 {
   "name": "extendeddatetime",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "extended date time helper functions and values for timezones",
   "main": "index.js",
   "scripts": {
