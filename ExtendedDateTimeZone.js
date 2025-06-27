@@ -17,7 +17,7 @@ class ExtendedDateTimeZone {
             this.timezone = this.offsetToTimeZone(date.getTimezoneOffset());
             this.timezoneOffset = date.getTimezoneOffset();
         }
-        this.dst = this.isDST();
+        this.dst = this.isDST(date);
     }
 
     static extractDateTime(dateSelector, hourSelector, minuteSelector, meridiemSelector, timezoneSelector) {
@@ -112,7 +112,7 @@ class ExtendedDateTimeZone {
     isDST() {
         const stDate = new Date(this.date.getTime());
         stDate.setMonth(0);
-        return (stDate.getTimezoneOffset() !== date.timezoneOffset);
+        return (stDate.getTimezoneOffset() !== this.date.timezoneOffset);
     }
 
     isLeapYear() {
