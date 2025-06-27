@@ -10,7 +10,7 @@ Unofficial Release Version 0.0.12
 	
 	//use or pass in date
 	const now = new Date();
-    	const edtz_now = new ExtendedDateTimeZone(now);
+    const edtz_now = new ExtendedDateTimeZone(now);
 
 	// or build a date from 0 value (default)
 	const edtz = new ExtendedDateTimeZone();
