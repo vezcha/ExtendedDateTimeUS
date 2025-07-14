@@ -1,14 +1,10 @@
-// export function add(a: number, b: number): number {
-//   return a + b;
-// }
-
 export default class ExtendedDateTimeZone {
 
     #date: Date;
     timezone: string;
     timezoneOffset: number;
-    timeZoneMode:string = 'IANA';
-    dst:boolean = false;
+    timeZoneMode: string = 'IANA';
+    dst: boolean = false;
 
     constructor(date = new Date(Date.parse('0'))) {
         this.#date = date;
@@ -24,10 +20,10 @@ export default class ExtendedDateTimeZone {
     }
 
     static extractDateTime(dateSelector: string, hourSelector: string, minuteSelector: string, meridiemSelector: string, timezoneSelector: string) {
-      const datePicker = document.querySelector(dateSelector);
-      if(!datePicker || !dateSelector || !hourSelector || !minuteSelector || !meridiemSelector || !timezoneSelector) {
-        return;
-      }
+        const datePicker = document.querySelector(dateSelector);
+        if (!datePicker || !dateSelector || !hourSelector || !minuteSelector || !meridiemSelector || !timezoneSelector) {
+            return;
+        }
         let dateStr = (datePicker as HTMLInputElement).value;
         if (!dateStr) {
             return;
@@ -43,8 +39,6 @@ export default class ExtendedDateTimeZone {
         const mins = parseInt((document.querySelector('select[name=minute]') as HTMLSelectElement).value);
         let sMin = parseInt((document.querySelector('select[name=minute]') as HTMLSelectElement).value);
         const timezone = (document.querySelector('select[name=scheduleTimeZone]') as HTMLSelectElement).value;
-        // console.log("🚀 ~ validateScheduleDateTime ~ sTimeZone:", sTimeZone)
-
         date.setHours(sHour, sMin, 0);
         const tzoffset = date.getTimezoneOffset();
     }
