@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+# Ignore test-related files
+/tests/
+/coverage.data
+/coverage/
+# Build files
+/src/
+.gitignore
