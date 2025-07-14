@@ -1,11 +1,11 @@
 {
   "name": "extendeddatetime",
-  "version": "0.0.13",
+  "version": "1.0.0",
   "description": "extended date time helper functions and values for timezones",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-    "files": [
+  "files": [
     "dist"
   ],
   "scripts": {
