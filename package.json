@@ -2,14 +2,25 @@
   "name": "extendeddatetime",
   "version": "0.0.13",
   "description": "extended date time helper functions and values for timezones",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+    "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "test": "jest"
   },
   "author": "vezcha",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0"
   },
   "repository": {
     "type": "git",

@@ -15,6 +15,9 @@ Unofficial Release Version 0.0.13
 	// or build a date from 0 value (default)
 	const edtz = new ExtendedDateTimeZone();
 
+    //extract back
+    let date = edtz.date;
+
 
 ##Helper Functions
 ==========================

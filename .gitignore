@@ -1,5 +1,14 @@
 node_modules/
 package-lock.json
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+
+# Build files
+/dist
+
+# Miscellaneous
 goals.txt
 todo.txt
 demo.js
