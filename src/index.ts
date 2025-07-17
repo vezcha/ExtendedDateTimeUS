@@ -51,10 +51,13 @@ export default class ExtendedDateTimeZone {
         }
         this.date.setTime(this.date.getTime() - ((targetTZO - localTZO) * 60 * 1000));
         this.timezone = tz;
+        this.setTimeZoneOffset(targetTZO);
+        this.dst = this.isDST();
     }
 
     setTimeZoneOffset(offset: number): void {
         this.timezoneOffset = offset;
+        this.timezone = this.offsetToTimeZone(offset);
     }
 
     getTimeZoneOffset(): number {

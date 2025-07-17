@@ -2,12 +2,19 @@
   "name": "extendeddatetime",
   "version": "1.0.0",
   "description": "extended date time helper functions and values for timezones",
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsup",
     "test": "jest"
