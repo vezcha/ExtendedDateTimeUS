@@ -1,12 +1,12 @@
     
 #Extended JS Date Time object with timezone adjustments and helper functions
 
-Unofficial Release Version 0.0.13
+Official Release Version 1.0.0
 
 ##Usage
 ====================
-	//cjs import
-	const ExtendedDateTimeZone = require('./ExtendedDateTimeZone.js');
+	//esm import
+	import ExtendedDateTimeZone from 'extendeddatetime';
 	
 	//use or pass in date
 	const now = new Date();
@@ -34,9 +34,9 @@ Unofficial Release Version 0.0.13
 
     timeZonetoOffset(timezone)
 
-    isDST(date)
+    isDST()
 
-    isLeapYear() 
+    isLeapYear()
 
     getDaysInMonth() 
 
