@@ -1,7 +1,7 @@
     
 #Extended JS Date Time object with timezone adjustments and helper functions
 
-Official Release Version 1.0.1
+Official Release Version
 
 ##Usage
 ====================
