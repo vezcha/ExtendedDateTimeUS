@@ -1,4 +1,5 @@
-import ExtendedDateTimeZone from '../dist';
+import ExtendedDateTimeZone from '../src/index.ts';
+// const ExtendedDateTimeZone = require('../dist/index.cjs');
 
 test('constructs a blank date successfully', () => {
     const edtz = new ExtendedDateTimeZone();
